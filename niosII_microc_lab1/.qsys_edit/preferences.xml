@@ -9,12 +9,12 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="125" />
-   <clocksource preferredWidth="125" />
-   <frequency preferredWidth="105" />
+   <clockname preferredWidth="390" />
+   <clocksource preferredWidth="390" />
+   <frequency preferredWidth="371" />
   </columns>
  </clocktable>
  <library
-   expandedCategories="Library/University Program,Library,Project,Library/University Program/Memory,Library/University Program/Audio &amp; Video" />
- <window width="720" height="716" x="251" y="418" />
+   expandedCategories="Library/Peripherals/Microcontroller Peripherals,Library/Peripherals,Library,Project" />
+ <window width="1456" height="876" x="-8" y="-8" />
 </preferences>

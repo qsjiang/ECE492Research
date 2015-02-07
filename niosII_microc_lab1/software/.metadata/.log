@@ -1,0 +1,34 @@
+!SESSION 2015-02-06 19:16:38.560 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-06 19:20:23.697
+!MESSAGE Indexed 'lab1_bsp' (94 sources, 67 headers) in 1.09 sec: 2,286 declarations; 9,993 references; 125 unresolved inclusions; 5 syntax errors; 203 unresolved names (1.63%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-06 19:20:26.942
+!MESSAGE Indexed 'lab1' (1 sources, 13 headers) in 0.02 sec: 8 declarations; 23 references; 15 unresolved inclusions; 0 syntax errors; 6 unresolved names (16.22%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-06 19:21:22.525
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109078 --id=0x0 --timestamp=1423275050]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-06 19:21:24.257
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109078 --id=0x0 --timestamp=1423275050 /cygdrive/c/Users/qsjiang/Documents/GitHub/ECE492Research/niosII_microc_lab1/software/lab1/lab1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-06 19:22:36.047
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109078 --id=0x0 --timestamp=1423275050]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-06 19:22:37.697
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109078 --id=0x0 --timestamp=1423275050 /cygdrive/c/Users/qsjiang/Documents/GitHub/ECE492Research/niosII_microc_lab1/software/lab1/lab1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-06 19:26:56.511
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-06 19:26:56.901
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1109078 --id=0x0 --timestamp=1423275050]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-06 19:26:58.570
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1109078 --id=0x0 --timestamp=1423275050 /cygdrive/c/Users/qsjiang/Documents/GitHub/ECE492Research/niosII_microc_lab1/software/lab1/lab1.elf]
