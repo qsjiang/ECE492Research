@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="159" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="125" />
+   <clocksource preferredWidth="125" />
+   <frequency preferredWidth="105" />
+  </columns>
+ </clocktable>
+ <library
+   expandedCategories="Library/University Program,Library,Project,Library/University Program/Memory,Library/University Program/Audio &amp; Video" />
+ <window width="720" height="716" x="251" y="418" />
+</preferences>
