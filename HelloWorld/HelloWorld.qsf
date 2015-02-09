@@ -484,9 +484,9 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to I2C_SDA
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name QSYS_FILE sub.qsys
+set_global_assignment -name VHDL_FILE helloworld.vhd
 set_global_assignment -name SOURCE_FILE helloworld.cmp
 set_global_assignment -name VHDL_FILE my_sev_seg.vhd
 set_global_assignment -name VHDL_FILE DE2_CONSTANTS.vhd
-set_global_assignment -name VHDL_FILE ../../../../Desktop/helloworld.vhd
-set_global_assignment -name QSYS_FILE helloworld.qsys
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

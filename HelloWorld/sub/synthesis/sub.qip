@@ -1,0 +1,19 @@
+set_global_assignment -entity "sub" -library "sub" -name IP_TOOL_NAME "qsys"
+set_global_assignment -entity "sub" -library "sub" -name IP_TOOL_VERSION "12.1sp1"
+set_global_assignment -entity "sub" -library "sub" -name IP_TOOL_ENV "qsys"
+set_global_assignment -library "sub" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../sub.sopcinfo"]
+set_instance_assignment -entity "sub" -library "sub" -name SLD_INFO "QSYS_NAME sub HAS_SOPCINFO 1 GENERATION_ID 1423453025"
+set_global_assignment -library "sub" -name MISC_FILE [file join $::quartus(qip_path) "../../sub.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "sub" -name MISC_FILE [file join $::quartus(qip_path) "../../sub.qsys"]
+
+set_global_assignment -library "sub" -name VERILOG_FILE [file join $::quartus(qip_path) "sub.v"]
+set_global_assignment -library "sub" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "sub" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "sub" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "sub" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/my_sev_seg.vhd"]
+set_global_assignment -library "sub" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/DE2_CONSTANTS.vhd"]
+
+set_global_assignment -entity "altera_reset_controller" -library "sub" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "sub" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_reset_controller" -library "sub" -name IP_TOOL_ENV "qsys"

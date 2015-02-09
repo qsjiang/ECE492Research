@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2015.02.08.20:42:46"
+ outputDirectory="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone II"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="EP2C35F672C6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="50000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="my_sev_seg_0_conduit_end_0" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <port
+       name="my_sev_seg_0_conduit_end_0_export"
+       direction="output"
+       role="export"
+       width="7" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="sub:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP2C35F672C6,AUTO_DEVICE_FAMILY=Cyclone II,AUTO_GENERATION_ID=1423453366,AUTO_UNIQUE_ID=(clock_source:12.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(my_sev_seg:1.0:AUTO_CLOCK_CLOCK_RATE=50000000)(clock:12.1:)(reset:12.1:)"
+   instancePathKey="sub"
+   kind="sub"
+   version="1.0"
+   name="sub">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE" value="EP2C35F672C6" />
+  <parameter name="AUTO_GENERATION_ID" value="1423453366" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/sub.v"
+       type="VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/my_sev_seg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/DE2_CONSTANTS.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/sub.qsys"
+       attributes="" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/my_sev_seg_hw.tcl"
+       attributes="" />
+   <file
+       path="C:/altera/12.1sp1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl"
+       attributes="" />
+   <file
+       path="C:/altera/12.1sp1/ip/altera/merlin/altera_reset_controller/altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="C:/altera/12.1sp1/ip/altera/merlin/altera_reset_controller/altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="C:/altera/12.1sp1/ip/altera/merlin/altera_reset_controller/altera_reset_controller.sdc"
+       attributes="" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="sub">queue size: 0 starting:sub "sub"</message>
+   <message level="Debug">Transform: PipelineBridgeSwap</message>
+   <message level="Info" culprit="pipeline_bridge_swap_transform"><![CDATA[After transform: <b>2</b> modules, <b>2</b> connections]]></message>
+   <message level="Debug">Transform: ClockCrossingBridgeSwap</message>
+   <message level="Debug">Transform: QsysBetaIPSwap</message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Info">No custom instruction connections, skipping transform </message>
+   <message level="Debug">Transform: TristateConduitUpgradeTransform</message>
+   <message level="Debug">Transform: TranslatorTransform</message>
+   <message level="Info">No Avalon connections, skipping transform </message>
+   <message level="Debug">Transform: AXI4TranslatorTransform</message>
+   <message level="Info">No Avalon connections, skipping transform </message>
+   <message level="Debug">Transform: IDPadTransform</message>
+   <message level="Debug">Transform: DomainTransform</message>
+   <message level="Debug">Transform: RouterTransform</message>
+   <message level="Debug">Transform: TrafficLimiterTransform</message>
+   <message level="Debug">Transform: BurstTransform</message>
+   <message level="Debug">Transform: CombinedWidthTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Info" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>3</b> modules, <b>4</b> connections]]></message>
+   <message level="Debug">Transform: NetworkToSwitchTransform</message>
+   <message level="Debug">Transform: WidthTransform</message>
+   <message level="Debug">Transform: RouterTableTransform</message>
+   <message level="Debug">Transform: ClockCrossingTransform</message>
+   <message level="Debug">Transform: PipelineTransform</message>
+   <message level="Debug">Transform: TrafficLimiterUpdateTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug" culprit="sub"><![CDATA["<b>sub</b>" reuses <b>my_sev_seg</b> "<b>submodules/my_sev_seg</b>"]]></message>
+   <message level="Debug" culprit="sub"><![CDATA["<b>sub</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"]]></message>
+   <message level="Debug" culprit="sub">queue size: 1 starting:my_sev_seg "submodules/my_sev_seg"</message>
+   <message level="Info" culprit="my_sev_seg_0"><![CDATA["<b>sub</b>" instantiated <b>my_sev_seg</b> "<b>my_sev_seg_0</b>"]]></message>
+   <message level="Debug" culprit="sub">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>sub</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="my_sev_seg:1.0:AUTO_CLOCK_CLOCK_RATE=50000000"
+   instancePathKey="sub:.:my_sev_seg_0"
+   kind="my_sev_seg"
+   version="1.0"
+   name="my_sev_seg">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
+  <generatedFiles>
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/my_sev_seg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/DE2_CONSTANTS.vhd"
+       type="VHDL"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/my_sev_seg_hw.tcl"
+       attributes="" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="sub" as="my_sev_seg_0" />
+  <messages>
+   <message level="Debug" culprit="sub">queue size: 1 starting:my_sev_seg "submodules/my_sev_seg"</message>
+   <message level="Info" culprit="my_sev_seg_0"><![CDATA["<b>sub</b>" instantiated <b>my_sev_seg</b> "<b>my_sev_seg_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_reset_controller:12.1:AUTO_CLK_CLOCK_RATE=-1,AUTO_DEVICE_FAMILY=Cyclone II,NUM_RESET_INPUTS=1,OUTPUT_RESET_SYNC_EDGES=deassert,SYNC_DEPTH=2"
+   instancePathKey="sub:.:rst_controller"
+   kind="altera_reset_controller"
+   version="12.1"
+   name="altera_reset_controller">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <generatedFiles>
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/altera/12.1sp1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl"
+       attributes="" />
+   <file
+       path="C:/altera/12.1sp1/ip/altera/merlin/altera_reset_controller/altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="C:/altera/12.1sp1/ip/altera/merlin/altera_reset_controller/altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="C:/altera/12.1sp1/ip/altera/merlin/altera_reset_controller/altera_reset_controller.sdc"
+       attributes="" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="sub" as="rst_controller" />
+  <messages>
+   <message level="Debug" culprit="sub">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>sub</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for HelloWorld
-Sun Feb 08 20:07:59 2015
-Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
+Sun Feb 08 20:42:48 2015
+Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
 ---------------------
@@ -10,7 +10,16 @@ Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Ve
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Source assignments for sub:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+ 10. Parameter Settings for User Entity Instance: sub:u0|altera_reset_controller:rst_controller
+ 11. Parameter Settings for User Entity Instance: sub:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+ 12. Port Connectivity Checks: "sub:u0|altera_reset_controller:rst_controller"
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +45,20 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                           ;
 +------------------------------------+---------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Feb 08 20:07:59 2015                 ;
-; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
+; Analysis & Synthesis Status        ; Successful - Sun Feb 08 20:42:48 2015             ;
+; Quartus II 32-bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
 ; Revision Name                      ; HelloWorld                                        ;
-; Top-level Entity Name              ; HelloWorld                                        ;
+; Top-level Entity Name              ; helloworld                                        ;
 ; Family                             ; Cyclone II                                        ;
-; Total logic elements               ; N/A until Partition Merge                         ;
-;     Total combinational functions  ; N/A until Partition Merge                         ;
-;     Dedicated logic registers      ; N/A until Partition Merge                         ;
-; Total registers                    ; N/A until Partition Merge                         ;
-; Total pins                         ; N/A until Partition Merge                         ;
-; Total virtual pins                 ; N/A until Partition Merge                         ;
-; Total memory bits                  ; N/A until Partition Merge                         ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                         ;
-; Total PLLs                         ; N/A until Partition Merge                         ;
+; Total logic elements               ; 0                                                 ;
+;     Total combinational functions  ; 0                                                 ;
+;     Dedicated logic registers      ; 0                                                 ;
+; Total registers                    ; 0                                                 ;
+; Total pins                         ; 9                                                 ;
+; Total virtual pins                 ; 0                                                 ;
+; Total memory bits                  ; 0                                                 ;
+; Embedded Multiplier 9-bit elements ; 0                                                 ;
+; Total PLLs                         ; 0                                                 ;
 +------------------------------------+---------------------------------------------------+
 
 
@@ -155,61 +164,210 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------+
+; File Name with User-Entered Path                                                                             ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                 ; Library                  ;
++--------------------------------------------------------------------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------+
+; helloworld.vhd                                                                                               ; yes             ; User VHDL File               ; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/helloworld.vhd                                   ;                          ;
+; DE2_CONSTANTS.vhd                                                                                            ; yes             ; User VHDL File               ; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/DE2_CONSTANTS.vhd                                ;                          ;
+; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/sub.v                                  ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/sub.v                                  ; altera_reserved_qsys_sub ;
+; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/DE2_CONSTANTS.vhd           ; yes             ; Auto-Found VHDL File         ; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/DE2_CONSTANTS.vhd           ; altera_reserved_qsys_sub ;
+; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_controller.v   ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_controller.v   ; altera_reserved_qsys_sub ;
+; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_synchronizer.v ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/altera_reset_synchronizer.v ; altera_reserved_qsys_sub ;
+; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/my_sev_seg.vhd              ; yes             ; Auto-Found VHDL File         ; C:/Users/qsjiang/Documents/GitHub/ECE492Research/HelloWorld/db/ip/sub/submodules/my_sev_seg.vhd              ; altera_reserved_qsys_sub ;
++--------------------------------------------------------------------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 9     ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |helloworld                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |helloworld         ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Source assignments for sub:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1 ;
++-------------------+-------+------+------------------------------------------------------------------------------+
+; Assignment        ; Value ; From ; To                                                                           ;
++-------------------+-------+------+------------------------------------------------------------------------------+
+; PRESERVE_REGISTER ; on    ; -    ; altera_reset_synchronizer_int_chain[1]                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; altera_reset_synchronizer_int_chain[0]                                       ;
++-------------------+-------+------+------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sub:u0|altera_reset_controller:rst_controller ;
++-------------------------+----------+-------------------------------------------------------+
+; Parameter Name          ; Value    ; Type                                                  ;
++-------------------------+----------+-------------------------------------------------------+
+; NUM_RESET_INPUTS        ; 1        ; Signed Integer                                        ;
+; OUTPUT_RESET_SYNC_EDGES ; deassert ; String                                                ;
+; SYNC_DEPTH              ; 2        ; Signed Integer                                        ;
++-------------------------+----------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sub:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; ASYNC_RESET    ; 1     ; Unsigned Binary                                                                                              ;
+; DEPTH          ; 2     ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "sub:u0|altera_reset_controller:rst_controller" ;
++------------+-------+----------+-------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                   ;
++------------+-------+----------+-------------------------------------------+
+; reset_in1  ; Input ; Info     ; Stuck at GND                              ;
+; reset_in2  ; Input ; Info     ; Stuck at GND                              ;
+; reset_in3  ; Input ; Info     ; Stuck at GND                              ;
+; reset_in4  ; Input ; Info     ; Stuck at GND                              ;
+; reset_in5  ; Input ; Info     ; Stuck at GND                              ;
+; reset_in6  ; Input ; Info     ; Stuck at GND                              ;
+; reset_in7  ; Input ; Info     ; Stuck at GND                              ;
+; reset_in8  ; Input ; Info     ; Stuck at GND                              ;
+; reset_in9  ; Input ; Info     ; Stuck at GND                              ;
+; reset_in10 ; Input ; Info     ; Stuck at GND                              ;
+; reset_in11 ; Input ; Info     ; Stuck at GND                              ;
+; reset_in12 ; Input ; Info     ; Stuck at GND                              ;
+; reset_in13 ; Input ; Info     ; Stuck at GND                              ;
+; reset_in14 ; Input ; Info     ; Stuck at GND                              ;
+; reset_in15 ; Input ; Info     ; Stuck at GND                              ;
++------------+-------+----------+-------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
-    Info: Processing started: Sun Feb 08 20:07:53 2015
+    Info: Processing started: Sun Feb 08 20:42:42 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HelloWorld -c HelloWorld
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12248): Elaborating Qsys system entity "helloworld.qsys"
-Info (12250): 2015.02.08.20:07:56 Progress: Loading HelloWorld/helloworld.qsys
-Info (12250): 2015.02.08.20:07:57 Progress: Reading input file
-Info (12250): 2015.02.08.20:07:57 Progress: Adding clk_0 [clock_source 12.1]
-Info (12250): 2015.02.08.20:07:57 Progress: Parameterizing module clk_0
-Info (12250): 2015.02.08.20:07:57 Progress: Adding my_sev_seg_0 [my_sev_seg 1.0]
-Info (12250): 2015.02.08.20:07:57 Progress: Parameterizing module my_sev_seg_0
-Info (12250): 2015.02.08.20:07:57 Progress: Building connections
-Info (12250): 2015.02.08.20:07:57 Progress: Parameterizing connections
-Info (12250): 2015.02.08.20:07:57 Progress: Validating
-Info (12250): 2015.02.08.20:07:57 Progress: Done reading input file
-Info (12250): Helloworld: Generating helloworld "helloworld" for QUARTUS_SYNTH
+Info (12248): Elaborating Qsys system entity "sub.qsys"
+Info (12250): 2015.02.08.20:42:45 Progress: Loading HelloWorld/sub.qsys
+Info (12250): 2015.02.08.20:42:45 Progress: Reading input file
+Info (12250): 2015.02.08.20:42:45 Progress: Adding clk_0 [clock_source 12.1]
+Info (12250): 2015.02.08.20:42:45 Progress: Parameterizing module clk_0
+Info (12250): 2015.02.08.20:42:45 Progress: Adding my_sev_seg_0 [my_sev_seg 1.0]
+Info (12250): 2015.02.08.20:42:45 Progress: Parameterizing module my_sev_seg_0
+Info (12250): 2015.02.08.20:42:45 Progress: Building connections
+Info (12250): 2015.02.08.20:42:46 Progress: Parameterizing connections
+Info (12250): 2015.02.08.20:42:46 Progress: Validating
+Info (12250): 2015.02.08.20:42:46 Progress: Done reading input file
+Info (12250): Sub: Generating sub "sub" for QUARTUS_SYNTH
 Info (12250): Pipeline_bridge_swap_transform: After transform: 2 modules, 2 connections
 Info (12250): No custom instruction connections, skipping transform 
 Info (12250): No Avalon connections, skipping transform 
 Info (12250): No Avalon connections, skipping transform 
 Info (12250): Reset_adaptation_transform: After transform: 3 modules, 4 connections
-Info (12250): My_sev_seg_0: "helloworld" instantiated my_sev_seg "my_sev_seg_0"
-Info (12250): Rst_controller: "helloworld" instantiated altera_reset_controller "rst_controller"
-Info (12250): Helloworld: Done helloworld" with 3 modules, 6 files, 14647 bytes
-Info (12249): Finished elaborating Qsys system entity "helloworld.qsys"
+Info (12250): My_sev_seg_0: "sub" instantiated my_sev_seg "my_sev_seg_0"
+Info (12250): Rst_controller: "sub" instantiated altera_reset_controller "rst_controller"
+Info (12250): Sub: Done sub" with 3 modules, 6 files, 14633 bytes
+Info (12249): Finished elaborating Qsys system entity "sub.qsys"
+Info (12021): Found 2 design units, including 1 entities, in source file helloworld.vhd
+    Info (12022): Found design unit 1: helloworld-structure
+    Info (12023): Found entity 1: helloworld
 Info (12021): Found 2 design units, including 1 entities, in source file my_sev_seg.vhd
     Info (12022): Found design unit 1: my_sev_seg-avalon
     Info (12023): Found entity 1: my_sev_seg
 Info (12021): Found 1 design units, including 0 entities, in source file de2_constants.vhd
     Info (12022): Found design unit 1: DE2_CONSTANTS
-Info (12021): Found 2 design units, including 1 entities, in source file /users/qsjiang/desktop/helloworld.vhd
-    Info (12022): Found design unit 1: helloworld-structure
-    Info (12023): Found entity 1: helloworld
-Info (12021): Found 1 design units, including 1 entities, in source file db/ip/helloworld/helloworld.v
-    Info (12023): Found entity 1: helloworld
-Info (12021): Found 1 design units, including 0 entities, in source file db/ip/helloworld/submodules/de2_constants.vhd
-    Info (12022): Found design unit 1: DE2_CONSTANTS (altera_reserved_qsys_helloworld)
-Info (12021): Found 1 design units, including 1 entities, in source file db/ip/helloworld/submodules/altera_reset_controller.v
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sub/sub.v
+    Info (12023): Found entity 1: sub
+Info (12021): Found 1 design units, including 0 entities, in source file db/ip/sub/submodules/de2_constants.vhd
+    Info (12022): Found design unit 1: DE2_CONSTANTS (altera_reserved_qsys_sub)
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sub/submodules/altera_reset_controller.v
     Info (12023): Found entity 1: altera_reset_controller
-Info (12021): Found 1 design units, including 1 entities, in source file db/ip/helloworld/submodules/altera_reset_synchronizer.v
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sub/submodules/altera_reset_synchronizer.v
     Info (12023): Found entity 1: altera_reset_synchronizer
-Info (12021): Found 2 design units, including 1 entities, in source file db/ip/helloworld/submodules/my_sev_seg.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sub/submodules/my_sev_seg.vhd
     Info (12022): Found design unit 1: my_sev_seg-avalon
     Info (12023): Found entity 1: my_sev_seg
 Info (12127): Elaborating entity "HelloWorld" for the top level hierarchy
-Error (12006): Node instance "u0" instantiates undefined entity "niosII_system" File: C:/Users/qsjiang/Desktop/helloworld.vhd Line: 49
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
-    Error: Peak virtual memory: 490 megabytes
-    Error: Processing ended: Sun Feb 08 20:07:59 2015
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:05
+Info (12128): Elaborating entity "sub" for hierarchy "sub:u0"
+Info (12128): Elaborating entity "my_sev_seg" for hierarchy "sub:u0|my_sev_seg:my_sev_seg_0"
+Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "sub:u0|altera_reset_controller:rst_controller"
+Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "sub:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[0]" is stuck at GND
+    Warning (13410): Pin "HEX0[1]" is stuck at GND
+    Warning (13410): Pin "HEX0[2]" is stuck at GND
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC
+    Warning (13410): Pin "HEX0[4]" is stuck at VCC
+    Warning (13410): Pin "HEX0[5]" is stuck at VCC
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50"
+    Warning (15610): No output dependent on input pin "KEY[0]"
+Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 7 output pins
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 385 megabytes
+    Info: Processing ended: Sun Feb 08 20:42:48 2015
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 
