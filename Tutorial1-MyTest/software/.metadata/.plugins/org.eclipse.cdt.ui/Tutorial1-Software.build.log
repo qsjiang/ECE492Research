@@ -1,0 +1,22 @@
+
+**** Build of configuration Nios II for project Tutorial1-Software ****
+
+make all 
+Info: Building ../Tutorial1-Software_bsp/
+make --no-print-directory -C ../Tutorial1-Software_bsp/
+[BSP build complete]
+Info: Linking Tutorial1-Software.elf
+nios2-elf-g++  -T'../Tutorial1-Software_bsp//linker.x' -msys-crt0='../Tutorial1-Software_bsp//obj/HAL/src/crt0.o' -msys-lib=ucosii_bsp -L../Tutorial1-Software_bsp/   -Wl,-Map=Tutorial1-Software.map   -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Tutorial1-Software.elf obj/default/seven_seg.o -lm 
+nios2-elf-insert Tutorial1-Software.elf --thread_model ucosii --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x109028 --timestamp 1423444700 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name niosII_system --quartus_project_dir "C:/Users/qsjiang/Documents/GitHub/ECE492Research/Tutorial1" --jdi C:/Users/qsjiang/Documents/GitHub/ECE492Research/Tutorial1/seven_segment.jdi --sopcinfo C:/Users/qsjiang/Documents/GitHub/ECE492Research/Tutorial1/niosII_system.sopcinfo
+      0 [main] perl (4556) C:\altera\12.1sp1\quartus\bin\cygwin\bin\perl.exe: *** fatal error - cygheap base mismatch detected - 0x612708D0/0xB608D0.
+This problem is probably due to using incompatible versions of the cygwin DLL.
+Search for cygwin1.dll using the Windows Start->Find/Search facility
+and delete all but the most recent version.  The most recent version *should*
+reside in x:\cygwin\bin, where 'x' is the drive on which you have
+installed the cygwin distribution.  Rebooting is also suggested if you
+are unable to find another cygwin DLL.
+/cygdrive/c/altera/12.1sp1/nios2eds/bin/sh_pl.sh: line 2:  4520 Segmentation fault      PERL5LIB=`cygpath -u "$SOPC_KIT_NIOS2/bin"` perl "${SH_PL:-$0.pl}" $@
+make: *** [Tutorial1-Software.elf] Error 139
+make: *** Deleting file `Tutorial1-Software.elf'
+
+**** Build Finished ****
