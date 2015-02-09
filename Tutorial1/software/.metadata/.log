@@ -1,0 +1,140 @@
+!SESSION 2015-02-08 18:30:15.454 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-08 18:31:51.361
+!MESSAGE Indexed 'Tutorial1-Software_bsp' (93 sources, 65 headers) in 0.94 sec: 2,200 declarations; 9,839 references; 121 unresolved inclusions; 5 syntax errors; 197 unresolved names (1.61%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-08 18:31:54.511
+!MESSAGE Indexed 'Tutorial1-Software' (1 sources, 13 headers) in 0.01 sec: 8 declarations; 23 references; 15 unresolved inclusions; 0 syntax errors; 6 unresolved names (16.22%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-08 18:36:29.380
+!MESSAGE Indexed 'Tutorial1_bsp' (93 sources, 65 headers) in 0.62 sec: 2,200 declarations; 9,839 references; 121 unresolved inclusions; 5 syntax errors; 197 unresolved names (1.61%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-08 18:36:30.628
+!MESSAGE Indexed 'Tutorial1' (1 sources, 13 headers) in 0.00 sec: 8 declarations; 23 references; 15 unresolved inclusions; 0 syntax errors; 6 unresolved names (16.22%)
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2015-02-08 18:38:45.303
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:793)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:132)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete 'C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp\Makefile'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:384)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:837)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1945)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:780)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:132)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete: C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp\Makefile.
+Contains: Could not delete 'C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp'.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-02-08 18:38:45.303
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-02-08 18:38:45.303
+!MESSAGE Could not delete 'C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp\Makefile'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:384)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:837)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1945)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:780)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:132)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete: C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp\Makefile.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2015-02-08 18:38:45.303
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-02-08 18:38:45.303
+!MESSAGE Could not delete: C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp\Makefile.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-02-08 18:38:45.303
+!MESSAGE Could not delete 'C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp'.
+
+!ENTRY org.eclipse.core.resources 4 273 2015-02-08 18:38:45.319
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-02-08 18:38:45.319
+!MESSAGE Could not delete 'C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp\Makefile'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:384)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:837)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1945)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:780)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:132)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete: C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp\Makefile.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2015-02-08 18:38:45.319
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2015-02-08 18:38:45.319
+!MESSAGE Could not delete: C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp\Makefile.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-02-08 18:38:45.319
+!MESSAGE Could not delete 'C:\Users\qsjiang\Documents\GitHub\ECE492Research\Tutorial1\software\Tutorial1_bsp'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-08 18:39:21.963
+!MESSAGE Indexed 'Tutorial_bsp' (93 sources, 65 headers) in 0.52 sec: 2,200 declarations; 9,839 references; 121 unresolved inclusions; 5 syntax errors; 197 unresolved names (1.61%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-02-08 18:39:23.227
+!MESSAGE Indexed 'Tutorial' (1 sources, 13 headers) in 0.02 sec: 8 declarations; 23 references; 15 unresolved inclusions; 0 syntax errors; 6 unresolved names (16.22%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-08 18:40:09.808
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x109028 --id=0x0 --timestamp=1423444700]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-08 18:40:11.509
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x109028 --id=0x0 --timestamp=1423444700 /cygdrive/c/Users/qsjiang/Documents/GitHub/ECE492Research/Tutorial1/software/Tutorial/Tutorial.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-08 18:47:12.537
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x109028 --id=0x0 --timestamp=1423446306]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-02-08 18:47:14.206
+!MESSAGE Executing: [C:/altera/12.1sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x109028 --id=0x0 --timestamp=1423446306 /cygdrive/c/Users/qsjiang/Documents/GitHub/ECE492Research/Tutorial1/software/Tutorial/Tutorial.elf]
