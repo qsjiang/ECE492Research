@@ -1,0 +1,8 @@
+	component helloworld is
+		port (
+			clk_clk                           : in  std_logic                    := 'X'; -- clk
+			reset_reset_n                     : in  std_logic                    := 'X'; -- reset_n
+			my_sev_seg_0_conduit_end_0_export : out std_logic_vector(6 downto 0)         -- export
+		);
+	end component helloworld;
+

@@ -1,0 +1,19 @@
+set_global_assignment -entity "helloworld" -library "helloworld" -name IP_TOOL_NAME "qsys"
+set_global_assignment -entity "helloworld" -library "helloworld" -name IP_TOOL_VERSION "12.1sp1"
+set_global_assignment -entity "helloworld" -library "helloworld" -name IP_TOOL_ENV "qsys"
+set_global_assignment -library "helloworld" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../helloworld.sopcinfo"]
+set_instance_assignment -entity "helloworld" -library "helloworld" -name SLD_INFO "QSYS_NAME helloworld HAS_SOPCINFO 1 GENERATION_ID 1423450718"
+set_global_assignment -library "helloworld" -name MISC_FILE [file join $::quartus(qip_path) "../../helloworld.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "helloworld" -name MISC_FILE [file join $::quartus(qip_path) "../../helloworld.qsys"]
+
+set_global_assignment -library "helloworld" -name VERILOG_FILE [file join $::quartus(qip_path) "helloworld.v"]
+set_global_assignment -library "helloworld" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "helloworld" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "helloworld" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "helloworld" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/my_sev_seg.vhd"]
+set_global_assignment -library "helloworld" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/DE2_CONSTANTS.vhd"]
+
+set_global_assignment -entity "altera_reset_controller" -library "helloworld" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "helloworld" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_reset_controller" -library "helloworld" -name IP_TOOL_ENV "qsys"
