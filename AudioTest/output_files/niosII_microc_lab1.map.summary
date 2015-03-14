@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Mar 14 01:14:13 2015
+Quartus II 32-bit Version : 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version
+Revision Name : niosII_microc_lab1
+Top-level Entity Name : niosII_microc_lab1
+Family : Cyclone II
+Total logic elements : 5,916
+    Total combinational functions : 4,918
+    Dedicated logic registers : 3,582
+Total registers : 3582
+Total pins : 110
+Total virtual pins : 0
+Total memory bits : 204,160
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 3

@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project MicByPass ****
+
+make all 
+Info: Building ../MicByPass_bsp/
+make --no-print-directory -C ../MicByPass_bsp/
+[BSP build complete]
+[MicByPass build complete]
+
+**** Build Finished ****
